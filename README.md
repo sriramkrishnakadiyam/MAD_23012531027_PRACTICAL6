@@ -20,12 +20,15 @@ anim folder in res
 Convert SVG file to .xml file
 Theory
 What is Frame by Frame Animation?
+
 Frame-by-frame animation is an animation technique where each frame is drawn individually. It's like a flipbook. When you show the drawings in quick succession, it creates the illusion of movement. In Android, this is typically implemented using the AnimationDrawable class, where a sequence of drawable resources is defined in an XML file (usually in res/drawable) using the <animation-list> element.
 
 What is Tween Animation?
+
 Tween (short for in-between) animation is a type of animation where you define the start and end points of an animation, and the system creates the intermediate frames for you. It's used to perform transformations on a View, such as changing its position, size, rotation, and transparency. In Android, tween animations can be defined in XML files (in the res/anim folder) using tags like <scale>, <translate>, <rotate>, and <alpha>, all grouped within a <set> tag.
 
 How can you achieve edge-to-edge content display in your app?
+
 To achieve an edge-to-edge display, allowing your app to draw behind the system status and navigation bars, you should use the WindowCompat.setDecorFitsSystemWindows(window, false) method, typically in your Activity's onCreate method. This tells the system that your app's views will handle fitting the content within the system windows. You might then need to adjust your layout's padding or margins to prevent important UI elements from being obscured by the system bars.
 
 Application Instructions
@@ -38,4 +41,4 @@ Design the layout for MainActivity as shown in the provided screenshot.
 Implement a frame-by-frame animation on the ImageView to cycle through different images of an alarm clock.
 Use an <animation-list> in a drawable resource for the frame-by-frame animation.
 Screenshots
-![image alt]()
+![image alt](https://github.com/sriramkrishnakadiyam/MAD_23012531027_PRACTICAL6/blob/cc97bcf4dc9ff320fd6e7a161ad1d72dc9c65277/Screenshot%202025-11-27%20143507.png)
